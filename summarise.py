@@ -2,14 +2,15 @@ import bs4
 import urllib.request as url
 import re
 import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
 from nltk import sent_tokenize
 from nltk.corpus import stopwords
 from nltk import word_tokenize
-stop_word = stopwords.words('english')
 import string
 import heapq
+
+nltk.download('punkt')
+nltk.download('stopwords')
+stop_word = stopwords.words('english')
 
 def geturl(url_name,numofsentences):
   web = url.urlopen(url_name)
