@@ -7,7 +7,7 @@ This project is offered as a service through a simple flask [website](https://su
 <table>
   <tr>
     <td align="center">Landing Page</td>
-     <td align="center">After choosing mode of input</td>
+     <td align="center">Mode of input: URL</td>
      <td align="center">Summary Page</td>
   </tr>
   <tr>
