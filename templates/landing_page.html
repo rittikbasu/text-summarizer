@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script type=text/javascript src="{{url_for('static', filename='js/app.js') }}"></script>
+    <title>Summariser</title>
+</head>
+<body>
+    <form method="POST" class="my-form">
+        <div class="container" >
+          <h1 style="text-align:center">Summ<span id='h1'>ariser</span></h1>
+          <ul>
+            <li>
+              <h2 style="text-align:center">Paste the link of an article you'd like to summarise to get started</h2>
+              <select name="select" id="select" onchange="toggle()" required>
+                <option value="" selected disabled>Choose mode of input</option>
+                <option>URL</option>
+                <option>Text Box</option>     
+              </select>
+            </li> 
+            <li><input name="number" id="num" type="number" placeholder="No. of sentences in summary?" required onkeypress="return event.charCode >= 48" min="1" ></li>
+            <li><input name="url" id="url" type="text" placeholder="Enter URL"  required></li>
+            <li><textarea name="text" id="text" placeholder="Text" required></textarea></li>     
+            <li>
+              <div class="grid">
+                <button class="btn-grid" type="submit">
+                  <span class="front">Summarise</span>
+                </button>
+              </div>
+            </li>    
+          </ul>
+        </div>
+    </form>
+        <div id="footer">
+            <small>Made with <span>❤</span> by <a href="https://github.com/rittikbasu" target="_blank">Rittik Basu</a>
+            </small>
+          </div>
+      
+</body>
+</html>

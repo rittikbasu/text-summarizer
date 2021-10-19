@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script type=text/javascript src="{{url_for('static', filename='js/app.js') }}"></script>
+    <title>Summariser</title>
+</head>
+<body>
+  <h1 style="text-align:center">Summ<span id='h1'>ariser</span></h1>
+  <div class="summary" style="text-align:justify">
+    <p>{{text|safe}}</p>
+  </div>
+
+  <div id="footer2">
+      <small>Made with <span>❤</span> by <a href="https://github.com/rittikbasu" target="_blank">Rittik Basu</a>
+      </small>
+  </div>
+      
+</body>
+</html>
