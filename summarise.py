@@ -87,4 +87,3 @@ def process(article,numofsentences):
   summary = ' '.join(summary)
 
   return summary
-S
